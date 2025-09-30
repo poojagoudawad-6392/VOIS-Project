@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title='Airbnb Hotel Booking Analysis', layout='wide')
 
-DATA_PATH = os.path.join(os.getcwd(), 'Airbnb_Open_Data.csv')
+DATA_PATH = os.path.join(os.getcwd(), 'Airbnb_Open_Data(2).zip')
 
 @st.cache_data(show_spinner=False)
 def load_data_default(path: str) -> pd.DataFrame:
@@ -279,3 +279,4 @@ with map_tab:
         st.info('Latitude/Longitude columns not found in data.')
 
 st.caption('Built with Streamlit. Use the sidebar to filter results.')
+
